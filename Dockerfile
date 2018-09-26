@@ -56,6 +56,7 @@ RUN set -x \
         libyubikey-dev \
         libykpers-1-dev
 
+ENV PATH="/opt/qt${QT5_VERSION}/bin:${PATH}"
 ENV CMAKE_PREFIX_PATH="/opt/qt${QT5_VERSION}/lib/cmake"
 ENV CMAKE_INCLUDE_PATH="/opt/keepassxc-libs/include"
 ENV CMAKE_LIBRARY_PATH="/opt/keepassxc-libs/lib/x86_64-linux-gnu"
